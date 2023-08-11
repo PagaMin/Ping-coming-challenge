@@ -1,0 +1,102 @@
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    // animation-name: entry;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+}
+
+.img-dashboard {
+    height: 24.25rem;
+    width: 40.125rem;
+    margin-top: 2rem;
+}
+
+h1 {
+    font-weight: 300;
+    color: $gray;
+    margin-top: 2rem;
+}
+
+.desc {
+    margin-top: 1rem;
+}
+
+strong {
+    color: $very-dark;
+}
+
+.icons {
+    cursor: pointer;
+    color: $blue;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.fa-brands {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 1px solid $gray;
+    &:hover {
+        color: #fff;
+        background-color: $blue;
+    }
+}
+
+.copy {
+    color: $gray;
+    margin-top: 2rem;
+}
+
+form {
+    margin-top: 2rem;
+}
+
+input {
+    text-align: center;
+    width: 26.313rem;
+    height: 3.5rem;
+    border-radius: 29px;
+}
+
+button {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.33);
+    cursor: pointer;
+    width: 12.625rem;
+    height: 3.5rem;
+    background-color: $blue;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 29px;
+}
+
+@keyframes entry {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0%;
+    }
+
+    100% {
+        transform: translateY(auto);
+        opacity: 100%;
+    }
+}
+
+.fail {
+    display: none;
+    color: $light-red;
+    font-style: italic;
+    font-size: 0.8rem;
+    margin-left: 1rem;
+    margin-top: 4px;
+}

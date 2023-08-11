@@ -1,0 +1,16 @@
+@media (max-width: 700px) {
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    button {
+        margin-top: 1rem;
+        width: 26.313rem;
+    }
+
+    .img-dashboard {
+        width: 28.875rem;
+        height: 19.625rem;
+    }
+}
